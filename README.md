@@ -1,5 +1,4 @@
-Note : In Order To Avoid Having Problems With JSON Server. Please Wait 1-2 SECOND BETWEEN SENDING REQUESTS
-
+Note : In Order To Avoid Having Problems With JSON Server. Please Wait 1-2 Second Between Sending Requests
 To Run JSON Server:
 
 
