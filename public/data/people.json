@@ -1,0 +1,249 @@
+{
+  "user": {
+    "laststickerdate": "1253247352891",
+    "remaindailysticker": 3
+  },
+  "teams": {
+    "data": [
+      {
+        "id": 0,
+        "name": "Web Team",
+        "motto": "Blazing Fast Web",
+        "description": "We are responsible for www.trendyol.com and our most critical KPI is UI/UX and addign new features. We always focus on customer satisfaction.",
+        "contact": "#web-public is our slack channel storefrontdesktopteam@trendyol.com is our mail address",
+        "logo": "../assets/webteam.png",
+        "members": [
+          {
+            "id": 0,
+            "name": "Ahmet",
+            "position": "Team Lead",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 1,
+            "name": "Filiz",
+            "position": "SR Product Owner",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 2,
+            "name": "Numan",
+            "position": "Software Developer",
+            "duration": "5 Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 3,
+            "name": "Mustafa",
+            "position": "SN Software Developer",
+            "duration": "3+ Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 4,
+            "name": "Tülay",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 5,
+            "name": "Aydın",
+            "position": "SR Software Developer",
+            "duration": "8 Ay",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 6,
+            "name": "Burcu",
+            "position": "Developer in Test",
+            "duration": "3+ Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 7,
+            "name": "Buray",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 8,
+            "name": "Serhat",
+            "position": "SR Software Developer",
+            "duration": "8 Ay",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 9,
+            "name": "Muzaffer",
+            "position": "Developer In Test",
+            "duration": "3+ Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 10,
+            "name": "Serenay",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 11,
+            "name": "Yunus",
+            "position": "SR Software Developer",
+            "duration": "8 Ay",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 12,
+            "name": "Özge",
+            "position": "Developer In Test",
+            "duration": "3+ Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 13,
+            "name": "Aslı",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Mobile Web Team",
+        "motto": "Our favourite smart phone is Iphone4",
+        "description": "We are responsible for www.trendyol.com and our most critical KPI is UI/UX and addign new features. We always focus on customer satisfaction",
+        "logo": "../assets/devteam.png",
+        "members": [
+          {
+            "id": 0,
+            "name": "Atakan",
+            "position": "Team Lead",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 1,
+            "name": "Selin",
+            "position": "SR Product Owner",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 2,
+            "name": "Pascal",
+            "position": "Software Developer",
+            "duration": "5 Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 3,
+            "name": "Yasin",
+            "position": "SN Software Developer",
+            "duration": "3+ Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 4,
+            "name": "Nehir",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 5,
+            "name": "Rüzgar",
+            "position": "SR Software Developer",
+            "duration": "8 Ay",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 6,
+            "name": "Gülsüm",
+            "position": "Developer in Test",
+            "duration": "3+ Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 7,
+            "name": "Serdar",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 8,
+            "name": "Serhan",
+            "position": "SR Software Developer",
+            "duration": "8 Ay",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 9,
+            "name": "Hakan",
+            "position": "Developer In Test",
+            "duration": "3+ Yıl",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 10,
+            "name": "Gülçin",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 11,
+            "name": "Emre",
+            "position": "SR Software Developer",
+            "duration": "8 Ay",
+            "photo": "../assets/m.png",
+            "locked": true
+          },
+          {
+            "id": 12,
+            "name": "Buse",
+            "position": "Developer In Test",
+            "duration": "3+ Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          },
+          {
+            "id": 13,
+            "name": "Ezgi",
+            "position": "Software Developer",
+            "duration": "2 Yıl",
+            "photo": "../assets/f.png",
+            "locked": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+
+.cover {
+    width: calc(var(--baseline) * 40);
+    height: calc(var(--baseline) * 42.6);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+    background-color: #e4e1e000;
+    & .background {
+        overflow: hidden;
+      
+     
+
+
+        height: 90%;
+        width: 80%;
+        float: right;
+        background: var(--base-color);
+        background: linear-gradient(to top right, rgb(255, 255, 255) 50%, var(--base-color) 50%);
+    }
+
+    & p {
+        color: var(--base-color);
+        font-size: 23px;
+        position: relative;
+        top: 45%;
+        left: 3%;
+    }
+    & h1 {
+        font-family: "Quicksand";
+        font-size: 70px;
+        position: relative;
+        top: 50%;
+        width: 100px;
+        border-bottom: 1px solid #000000;
+    }
+    & .circle {
+
+
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 40%;
+        border-radius: 50%;
+        bottom: 10%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        & h2 {
+            font-size: 40px;
+            color: var(--base-color);
+            transform: rotateZ(50deg);
+        }
+    }
+}
+
+
+.mouth {
+    animation: grow-mouth 1.75s steps(120, end); ;
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    height: 70px;
+    width: 120px;
+    background-color: var(--base-color);
+
+    border-radius: 50%;
+    transform: rotateZ(50deg);
+}
+.mouth-cover {
+    animation: grow-cover 2s steps(40, end); ;
+    
+    position: absolute;
+    top: 34%;
+    left: 1%;
+    height: 70px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+    transform: rotateZ(50deg);
+}

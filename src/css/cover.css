@@ -1,0 +1,89 @@
+.cover {
+  width: calc(var(--baseline) * 40);
+  height: calc(var(--baseline) * 42.6);
+  -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  background-color: #e4e1e000;
+}
+
+.cover .background {
+  overflow: hidden;
+  height: 90%;
+  width: 80%;
+  float: right;
+  background: var(--base-color);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, white), color-stop(50%, var(--base-color)));
+  background: linear-gradient(to top right, white 50%, var(--base-color) 50%);
+}
+
+.cover p {
+  color: var(--base-color);
+  font-size: 23px;
+  position: relative;
+  top: 45%;
+  left: 3%;
+}
+
+.cover h1 {
+  font-family: "Quicksand";
+  font-size: 70px;
+  position: relative;
+  top: 50%;
+  width: 100px;
+  border-bottom: 1px solid #000000;
+}
+
+.cover .circle {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 40%;
+  border-radius: 50%;
+  bottom: 10%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cover .circle h2 {
+  font-size: 40px;
+  color: var(--base-color);
+  -webkit-transform: rotateZ(50deg);
+          transform: rotateZ(50deg);
+}
+
+.mouth {
+  -webkit-animation: grow-mouth 1.75s steps(120, end);
+          animation: grow-mouth 1.75s steps(120, end);
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  height: 70px;
+  width: 120px;
+  background-color: var(--base-color);
+  border-radius: 50%;
+  -webkit-transform: rotateZ(50deg);
+          transform: rotateZ(50deg);
+}
+
+.mouth-cover {
+  -webkit-animation: grow-cover 2s steps(40, end);
+          animation: grow-cover 2s steps(40, end);
+  position: absolute;
+  top: 34%;
+  left: 1%;
+  height: 70px;
+  width: 160px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 3;
+  -webkit-transform: rotateZ(50deg);
+          transform: rotateZ(50deg);
+}
+/*# sourceMappingURL=cover.css.map */

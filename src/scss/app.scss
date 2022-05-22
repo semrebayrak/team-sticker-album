@@ -1,0 +1,278 @@
+//@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap");
+
+:root {
+  /* colors */
+  --body-bg: #fafafa;
+  --page-bg: #f5f5f5;
+  --dark-text: #2a2935;
+  --base-color: #fd6a18;
+
+  /* spacing */
+  /* this is what defines the global scale */
+  --baseline: 18px;
+
+  /* fonts */
+  --book-title: "Tulpen One", sans-serif;
+  --title: "Cormorant Garamond", serif;
+  --body: "Cormorant Garamond", serif;
+  --base-size: var(--baseline) * 1.2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pg1 {
+  border-left: 5px solid var(--base-color);
+}
+.pg2 {
+  border-right: 5px solid var(--base-color);
+  transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.team-name {
+  position: relative  ;
+  left: 45%;
+ 
+  width: 300px;
+  background-color: var(--base-color);
+  color: white;
+  border-radius: 50px;
+
+  & h1 {
+    font-size: 25px;
+
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.team-logo {
+  position: absolute;
+  left: 4%;
+  top: 3%;
+  z-index: 2;
+  width: 200px !important;
+}
+
+h2 {
+  
+  left: 16%;
+  position: relative;
+  color: var(--base-color);
+  text-align: center;
+}
+
+h3 {
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
+
+  /* @keyframes name | duration | easing-function | delay */
+  animation: slidein 3s linear 1s;
+
+  /* @keyframes name | duration */
+  animation: slidein 3s;
+
+  // description
+  left: 45%;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+}
+
+.discovered-image {
+  animation-name: spin;
+  animation-duration: 15000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.person {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  left: 10%;
+  top: 1%;
+  display: flex;
+  flex-direction: column;
+
+  & p {
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    left: 0;
+    margin: 0;
+    color: var(--dark-text);
+    text-align: center;
+  }
+}
+
+.p0 {
+  top: 40%;
+  left: 11.5%;
+}
+.p1 {
+  top: 40%;
+  left: 26%;
+}
+.p2 {
+  top: 70%;
+  left: 3%;
+}
+.p3 {
+  top: 70%;
+  left: 18%;
+}
+.p4 {
+  top: 70%;
+  left: 33%;
+}
+.p5 {
+  top: 5%;
+  left: 55%;
+}
+
+.p6 {
+  top: 5%;
+  left: 70%;
+}
+.p7 {
+  top: 5%;
+  left: 85%;
+}
+
+.p8 {
+  top: 35%;
+  left: 55%;
+}
+
+.p9 {
+  top: 35%;
+  left: 70%;
+}
+.p10 {
+  top: 35%;
+  left: 85%;
+}
+.p11 {
+  top: 65%;
+  left: 55%;
+}
+
+.p12 {
+  top: 65%;
+  left: 70%;
+}
+.p13 {
+  top: 65%;
+  left: 85%;
+}
+
+.book {
+  border-top: 5px solid var(--base-color);
+  border-bottom: 5px solid var(--base-color);
+  & img {
+    border: 3px solid var(--base-color);
+    border-radius: 50%;
+    width: 140px;
+  }
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #f2f1f8;
+
+  transform: perspective(2000px);
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes grow-mouth {
+  from {
+    width: 0px;
+    height: 40px;
+    opacity:-1;
+
+  }
+  to {
+    height: 70px;
+    opacity:1;
+    width: 120px;
+  }
+}
+@keyframes grow-cover {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 160px;
+  }
+}
+
+@keyframes grow-circle {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
+@keyframes grow-bg {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+
+.team-motto{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  line-height: 50px;
+  
+  animation: 
+    typing 3.5s steps(40, end);
+}
