@@ -1,6 +1,7 @@
 import { useNavigate, BrowserRouter, Routes, Route, Outlet, useParams } from 'react-router-dom';
-import TeamsContext from '../context/TeamsContext';
+import TeamsContext from '../api/context/TeamsContext';
 import React, { useState, useEffect, useContext } from 'react';
+import UnlockedPerson from '../components/unlockedperson';
 
 
 
@@ -32,7 +33,7 @@ export const Home = (props) => {
 
     }
     setDiscoveredPeople(ct)
-  }, [])
+  })
 
   const changePage = (direction) => {
     if (page == 1 && direction == -1)
@@ -42,7 +43,7 @@ export const Home = (props) => {
   }
 
   return (
-    <React.Fragment data-testId={'Home'}>
+    <>
       <img style={{ position: 'absolute', width: '10vw', left: '-1%', zIndex: 20, top: '50%', transform: 'rotate(180deg)' }} onClick={() => changePage(-1)} src="../assets/nextpage.png" alt="" />
       <img style={{ position: 'absolute', width: '10vw', right: '-1%', zIndex: 20, top: '50%' }} onClick={() => changePage(1)} src="../assets/nextpage.png" alt="" />
 
@@ -68,7 +69,7 @@ export const Home = (props) => {
           <img className="team-logo" src={team.logo} alt="" />
 
 
-          <div data-testId="team-name" className="team-name">
+          <div className="team-name">
 
             <h1>{team.name}</h1>
           </div>
@@ -91,16 +92,7 @@ export const Home = (props) => {
             team.members.map((member, index) => {
 
               return (
-                <div key={member.name} className={`person p${index}`}>
-
-                  <div className="photo">
-
-                    <img className={member.locked && "discovered-image"} src={member.locked ? lockedImage : member.photo} alt="" />
-                  </div>
-                  <p> {member.name ?? ""}</p>
-                  <p> {member.position ?? ""}</p>
-                  <p> {member.duration ?? ""}</p>
-                </div>
+                <UnlockedPerson key={index} member={member} index={index} lockedImage={lockedImage} />
               )
             }
             )
@@ -110,7 +102,7 @@ export const Home = (props) => {
 
       </div>
 
-    </React.Fragment>
+    </>
 
   )
 }

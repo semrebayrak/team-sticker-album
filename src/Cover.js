@@ -1,8 +1,10 @@
 import { useNavigate, BrowserRouter, Routes, Route, Outlet, useParams } from 'react-router-dom';
 import './css/cover.css';
-import TeamsContext from './context/TeamsContext';
-import { useState, useEffect, useContext } from 'react';
-import Stickersets from './components/stickersets';
+import TeamsContext from './api/context/TeamsContext';
+import { useState, useEffect, useContext, useRef } from 'react';
+import Stickersets from './components/dailystickers';
+import { useCallback } from 'react';
+import { fetchStickerInfo } from './api/service';
 
 
 
@@ -10,36 +12,25 @@ import Stickersets from './components/stickersets';
 export const Cover = () => {
 
   const routerHistory = useNavigate();
-
-
   const teams = useContext(TeamsContext)
+  const [remainDailySticker, setRemainDailySticker] = useState(0)
+  const [lastStickerDate, setLastStickerDate] = useState('')
 
-  const [lastStickerDate, setLastStickerDate] = useState();
 
-  const [stickerData, setStickerData] = useState(new Date());
+
+
+  const fetchData = useCallback(async () => {
+    var tempData = await fetchStickerInfo();
+    console.log(tempData)
+    setLastStickerDate(tempData.lastStickerDate)
+    setRemainDailySticker(tempData.remainDailySticker)
   
-
-  function diffHoursMoreThan24(date) {
-
-    var diff = (Date.now() -date) / 1000;
-    diff /= (60 * 60);
-    return Math.abs(Math.round(diff)) > 24;
-
-  }
+  }, [])
 
   useEffect(() => {
-    const fetchStickerInfo = async () => {
 
-      await fetch("http://localhost:8000/user").then(res => res.json()).then(result => setStickerData(result));
 
-    }
-    const fetchLastStickerDate = async () => {
-
-      await fetch("http://localhost:8000/user").then(res => res.json()).then(result => setLastStickerDate(result.laststickerdate));
-
-    }
-    fetchLastStickerDate();
-    fetchStickerInfo();
+    fetchData();
 
   }, [])
 
@@ -53,7 +44,7 @@ export const Cover = () => {
 
     <>
       {
-        diffHoursMoreThan24(lastStickerDate)&&stickerData.remaindailysticker>0 && <Stickersets teams={teams} user={stickerData} />
+        remainDailySticker > 0 && <Stickersets teams={teams} remaindailysticker={remainDailySticker} />
       }
       <img style={{ position: 'absolute', width: '10vw', right: '-1%', zIndex: 20, top: '50%' }} onClick={() => changePage()} src="../assets/nextpage.png" alt="" />
       <h1>Team Sticker Album</h1>
@@ -67,7 +58,7 @@ export const Cover = () => {
 
           <div className="circle">
 
-           
+
             <div className="mouth" />
             <div className="mouth-cover"></div>
 

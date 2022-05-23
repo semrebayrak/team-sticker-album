@@ -1,7 +1,7 @@
 {
   "user": {
-    "laststickerdate": "1253247352891",
-    "remaindailysticker": 3
+    "laststickerdate": "1653269740113",
+    "remaindailysticker": 0
   },
   "teams": {
     "data": [
@@ -18,7 +18,7 @@
             "name": "Ahmet",
             "position": "Team Lead",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 1,
@@ -33,7 +33,7 @@
             "position": "Software Developer",
             "duration": "5 Yıl",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 3,
@@ -41,7 +41,7 @@
             "position": "SN Software Developer",
             "duration": "3+ Yıl",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 4,
@@ -57,7 +57,7 @@
             "position": "SR Software Developer",
             "duration": "8 Ay",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 6,
@@ -65,7 +65,7 @@
             "position": "Developer in Test",
             "duration": "3+ Yıl",
             "photo": "../assets/f.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 7,
@@ -73,7 +73,7 @@
             "position": "Software Developer",
             "duration": "2 Yıl",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 8,
@@ -81,7 +81,7 @@
             "position": "SR Software Developer",
             "duration": "8 Ay",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 9,
@@ -97,7 +97,7 @@
             "position": "Software Developer",
             "duration": "2 Yıl",
             "photo": "../assets/f.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 11,
@@ -113,7 +113,7 @@
             "position": "Developer In Test",
             "duration": "3+ Yıl",
             "photo": "../assets/f.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 13,
@@ -121,7 +121,7 @@
             "position": "Software Developer",
             "duration": "2 Yıl",
             "photo": "../assets/f.png",
-            "locked": true
+            "locked": false
           }
         ]
       },
@@ -137,7 +137,7 @@
             "name": "Atakan",
             "position": "Team Lead",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 1,
@@ -152,7 +152,7 @@
             "position": "Software Developer",
             "duration": "5 Yıl",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 3,
@@ -160,7 +160,7 @@
             "position": "SN Software Developer",
             "duration": "3+ Yıl",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 4,
@@ -176,7 +176,7 @@
             "position": "SR Software Developer",
             "duration": "8 Ay",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 6,
@@ -200,7 +200,7 @@
             "position": "SR Software Developer",
             "duration": "8 Ay",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 9,
@@ -224,7 +224,7 @@
             "position": "SR Software Developer",
             "duration": "8 Ay",
             "photo": "../assets/m.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 12,
@@ -232,7 +232,7 @@
             "position": "Developer In Test",
             "duration": "3+ Yıl",
             "photo": "../assets/f.png",
-            "locked": true
+            "locked": false
           },
           {
             "id": 13,
@@ -240,7 +240,7 @@
             "position": "Software Developer",
             "duration": "2 Yıl",
             "photo": "../assets/f.png",
-            "locked": true
+            "locked": false
           }
         ]
       }

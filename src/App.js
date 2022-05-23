@@ -3,7 +3,7 @@ import { useNavigate, BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Cover from './Cover';
 import { useState, useEffect, useContext } from 'react';
-import { TeamsProvider } from './context/TeamsContext';
+import { TeamsProvider } from './api/context/TeamsContext';
 import './css/app.css';
 function App() {
 
